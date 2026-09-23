@@ -1,0 +1,35 @@
+{
+  "translation": "World English Bible",
+  "abbreviation": "WEB",
+  "edition": "2020 stable text edition",
+  "source": "https://ebible.org/details.php?id=engwebp",
+  "sourceArchive": "https://ebible.org/Scriptures/engwebp_vpl.zip",
+  "license": "Public Domain",
+  "books": [
+    {
+      "id": "ruth",
+      "file": "Ruth.json",
+      "expectedChapterCount": 4
+    },
+    {
+      "id": "1-samuel",
+      "file": "1Samuel.json",
+      "expectedChapterCount": 7
+    },
+    {
+      "id": "ecclesiastes",
+      "file": "Ecclesiastes.json",
+      "expectedChapterCount": 6
+    },
+    {
+      "id": "john",
+      "file": "John.json",
+      "expectedChapterCount": 12
+    },
+    {
+      "id": "galatians",
+      "file": "Galatians.json",
+      "expectedChapterCount": 6
+    }
+  ]
+}

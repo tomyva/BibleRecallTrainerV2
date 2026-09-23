@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibleRecallTrainerV2.ChapterReaderPage"
+             x:Name="ReaderRoot"
+             Title="{Binding Heading}">
+    <Grid RowDefinitions="Auto,Auto,Auto,*,Auto" Padding="18,12" RowSpacing="10">
+        <Grid ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="8">
+            <VerticalStackLayout Grid.RowSpan="2" Spacing="2">
+                <Label Text="{Binding Heading}" FontSize="28" FontAttributes="Bold" SemanticProperties.HeadingLevel="Level1" />
+                <Label Text="World English Bible" FontSize="14" TextColor="{StaticResource Gray500}" />
+                <Label Text="{Binding SpeechStatus}" FontSize="14" FontAttributes="Italic" SemanticProperties.Description="{Binding SpeechStatus}" />
+            </VerticalStackLayout>
+            <Button Grid.Column="1" Text="Read" Command="{Binding ReadChapterCommand}" SemanticProperties.Description="Read from here through the end of this book" />
+            <Button Grid.Column="2" Text="Stop" Command="{Binding StopCommand}" BackgroundColor="{StaticResource Gray600}" SemanticProperties.Description="Stop reading aloud" />
+            <Label Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding ErrorMessage}" IsVisible="{Binding HasError}" TextColor="#B3261E" Margin="0,8,0,0" />
+        </Grid>
+
+        <Border Grid.Row="1" Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 12" Padding="12,8">
+            <Grid ColumnDefinitions="*,110,110" RowDefinitions="Auto,Auto" ColumnSpacing="12">
+                <Label Text="Speech settings" FontAttributes="Bold" VerticalOptions="Center" />
+                <Label Grid.Column="1" Text="{Binding SpeechRate, StringFormat='Rate {0:F1}×'}" HorizontalTextAlignment="Center" />
+                <Label Grid.Column="2" Text="{Binding SpeechPitch, StringFormat='Pitch {0:F1}'}" HorizontalTextAlignment="Center" />
+                <Picker Grid.Row="1" Title="English voice" ItemsSource="{Binding AvailableVoices}" ItemDisplayBinding="{Binding DisplayName}"
+                        SelectedItem="{Binding SelectedVoice}" SemanticProperties.Description="English reading voice" />
+                <Slider Grid.Row="1" Grid.Column="1" Minimum="0.1" Maximum="2" Value="{Binding SpeechRate}" SemanticProperties.Description="Speaking rate" />
+                <Slider Grid.Row="1" Grid.Column="2" Minimum="0" Maximum="2" Value="{Binding SpeechPitch}" SemanticProperties.Description="Voice pitch" />
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="2" ColumnDefinitions="*,*" ColumnSpacing="10">
+            <Button Text="Voice Recall" Command="{Binding PracticeRecallCommand}" SemanticProperties.Description="Practice reciting verses from this chapter" />
+            <Button Grid.Column="1" Text="Missing Word Quiz" Command="{Binding PracticeQuizCommand}" SemanticProperties.Description="Practice missing words from this chapter" />
+        </Grid>
+
+        <CollectionView x:Name="VersesView" Grid.Row="3" ItemsSource="{Binding Verses}" SelectionMode="None"
+                        Scrolled="OnVersesScrolled">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeThickness="0" StrokeShape="RoundRectangle 8" Padding="4,7" Margin="0,1">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={x:Reference ReaderRoot}, Path=BindingContext.ReadFromVerseCommand}"
+                                                  CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                        <Border.Triggers>
+                            <DataTrigger TargetType="Border" Binding="{Binding IsActive}" Value="True">
+                                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={DynamicResource ActiveVerseBackground}, Dark={DynamicResource ActiveVerseBackgroundDark}}" />
+                                <Setter Property="Stroke" Value="{DynamicResource Primary}" />
+                                <Setter Property="StrokeThickness" Value="1" />
+                            </DataTrigger>
+                        </Border.Triggers>
+                        <Grid ColumnDefinitions="38,*">
+                            <Label Text="{Binding VerseNumber}" FontSize="13" FontAttributes="Bold" TextColor="{DynamicResource Primary}" Margin="0,3,8,0" HorizontalTextAlignment="End" />
+                            <Label Grid.Column="1" Text="{Binding Text}" FontSize="18" LineHeight="1.45" LineBreakMode="WordWrap" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid Grid.Row="4" ColumnDefinitions="*,Auto,*" ColumnSpacing="8">
+            <Button Text="Previous" Command="{Binding PreviousChapterCommand}" SemanticProperties.Description="Open the previous syllabus chapter" />
+            <Button Grid.Column="1" Text="Back" Command="{Binding BackCommand}" BackgroundColor="{StaticResource Gray600}" SemanticProperties.Description="Return to chapter selection" />
+            <Button Grid.Column="2" Text="Next" Command="{Binding NextChapterCommand}" SemanticProperties.Description="Open the next syllabus chapter" />
+        </Grid>
+        <ActivityIndicator Grid.RowSpan="5" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

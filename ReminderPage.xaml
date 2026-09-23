@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:BibleRecallTrainerV2.ViewModels"
+             x:Class="BibleRecallTrainerV2.ReminderPage"
+             x:Name="ReminderRoot"
+             x:DataType="viewModels:ReminderViewModel"
+             Title="Daily Reminders">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+            <Label Text="Daily study reminders" FontSize="28" FontAttributes="Bold" TextColor="{DynamicResource Primary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="Set several gentle prompts for reading or listening throughout your day. Everything stays on this device." />
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="14">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Label Text="Enable reminders" VerticalOptions="Center" FontSize="17" />
+                        <Switch Grid.Column="1" IsToggled="{Binding IsEnabled}" IsEnabled="{Binding IsSupported}" />
+                    </Grid>
+                    <Label Text="Reminder times" FontAttributes="Bold" />
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding ReminderTimes}" Spacing="8">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="viewModels:ReminderTimeViewModel">
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                    <TimePicker Time="{Binding TimeOfDay}" HorizontalOptions="Fill" />
+                                    <Button Grid.Column="1" Text="Remove"
+                                            Command="{Binding BindingContext.RemoveTimeCommand, Source={x:Reference ReminderRoot}}"
+                                            CommandParameter="{Binding .}" />
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                    <Button Text="Add another time" Command="{Binding AddTimeCommand}" IsEnabled="{Binding IsSupported}" />
+                    <Button Text="Save reminders" Command="{Binding SaveCommand}" IsEnabled="{Binding IsSupported}" />
+                </VerticalStackLayout>
+            </Border>
+            <Label Text="Up to 8 reminders can be scheduled each day." FontSize="13" TextColor="{StaticResource Gray500}" />
+            <Label Text="{Binding StatusMessage}" />
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+            <Label Text="{Binding ErrorMessage}" TextColor="DarkRed" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

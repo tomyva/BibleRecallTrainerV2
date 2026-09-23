@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:BibleRecallTrainerV2.ViewModels"
+             x:Class="BibleRecallTrainerV2.DataToolsPage"
+             x:DataType="viewModels:DataToolsViewModel"
+             Title="Data and About">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+            <Label Text="Data and about" FontSize="28" FontAttributes="Bold" TextColor="{DynamicResource Primary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Data health" FontAttributes="Bold" FontSize="20" SemanticProperties.HeadingLevel="Level2" />
+                    <Label Text="{Binding HealthSummary}" />
+                    <CollectionView ItemsSource="{Binding Issues}" SelectionMode="None">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <Label Text="{Binding .}" TextColor="DarkRed" Margin="0,4" />
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <Button Text="Check local data" Command="{Binding CheckCommand}"
+                            SemanticProperties.Hint="Verify saved progress and review schedule values" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Appearance" FontAttributes="Bold" FontSize="20" SemanticProperties.HeadingLevel="Level2" />
+                    <Label Text="Choose an accent color. Purple is the original theme." />
+                    <Picker Title="Color theme" ItemsSource="{Binding ThemeNames}" SelectedItem="{Binding SelectedTheme}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Export" FontAttributes="Bold" FontSize="20" SemanticProperties.HeadingLevel="Level2" />
+                    <Label Text="Create a readable JSON copy of progress, review schedule, goals, and reminder settings." />
+                    <Button Text="Share progress export" Command="{Binding ExportCommand}"
+                            SemanticProperties.Hint="Open the device share sheet with a progress file" />
+                    <Label Text="{Binding ExportStatus}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Reading positions" FontAttributes="Bold" FontSize="20" SemanticProperties.HeadingLevel="Level2" />
+                    <Label Text="The app remembers your place separately in every chapter for both reading and listening." />
+                    <Button Text="Reset all reading positions" Clicked="OnResetReadingPositionsClicked"
+                            BackgroundColor="{StaticResource Gray600}"
+                            SemanticProperties.Hint="Clear every saved chapter position" />
+                    <Label Text="{Binding BookmarkStatus}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="Bible Recall Trainer" FontAttributes="Bold" FontSize="18" />
+            <Label Text="{Binding VersionText}" />
+            <Label Text="Offline World English Bible study. Your learning data remains on this device unless you explicitly export it." />
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+            <Label Text="{Binding ErrorMessage}" TextColor="DarkRed" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

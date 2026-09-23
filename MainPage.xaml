@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:BibleRecallTrainerV2.ViewModels"
+             x:Class="BibleRecallTrainerV2.MainPage"
+             x:DataType="viewModels:MainViewModel"
+             Title="Bible Recall Trainer">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+            <Label Text="Bible Recall Trainer" FontSize="30" FontAttributes="Bold" TextColor="{DynamicResource Primary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="Your offline study dashboard" FontSize="17" />
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Today's plan" FontAttributes="Bold" FontSize="20" />
+                    <Label Text="{Binding Snapshot.DailyProgress}" FontSize="16" />
+                    <ProgressBar Progress="{Binding Snapshot.DailyProgressValue}" HeightRequest="8"
+                                 SemanticProperties.Description="Daily chapter goal progress" />
+                    <Label Text="{Binding Snapshot.SyllabusProgress}" />
+                    <Button Text="Continue reading" Command="{Binding ContinueCommand}"
+                            SemanticProperties.Hint="Open the next chapter in your study plan" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Review" FontAttributes="Bold" FontSize="20" />
+                    <Label Text="{Binding Snapshot.DueSummary}" FontSize="16" />
+                    <Button Text="Review due chapters" Command="{Binding ReviewDueCommand}"
+                            SemanticProperties.Hint="Start a quiz for the oldest due review" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <Button Grid.Column="0" Text="Study plan" Command="{Binding OpenStudyPlanCommand}" />
+                <Button Grid.Column="1" Text="Browse books" Command="{Binding BrowseBooksCommand}" />
+            </Grid>
+            <Button Text="Daily reminders" Command="{Binding OpenReminderCommand}" />
+            <Button Text="Data and about" Command="{Binding OpenDataToolsCommand}" />
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+            <Label Text="{Binding ErrorMessage}" TextColor="DarkRed" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

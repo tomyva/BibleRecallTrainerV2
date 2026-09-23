@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>BibleRecallTrainerV2.DataValidation</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Maui.Core" Version="13.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Models\*.cs" Link="Models\%(Filename)%(Extension)" />
+    <Compile Include="..\Services\IBibleAssetReader.cs" Link="Services\IBibleAssetReader.cs" />
+    <Compile Include="..\Services\IBibleContentService.cs" Link="Services\IBibleContentService.cs" />
+    <Compile Include="..\Services\BibleContentException.cs" Link="Services\BibleContentException.cs" />
+    <Compile Include="..\Services\LocalBibleContentService.cs" Link="Services\LocalBibleContentService.cs" />
+    <Compile Include="..\Services\ISpeechService.cs" Link="Services\ISpeechService.cs" />
+    <Compile Include="..\Services\IChapterSpeechPlayer.cs" Link="Services\IChapterSpeechPlayer.cs" />
+    <Compile Include="..\Services\IBackgroundPlaybackSession.cs" Link="Services\IBackgroundPlaybackSession.cs" />
+    <Compile Include="..\Services\ChapterSpeechPlayer.cs" Link="Services\ChapterSpeechPlayer.cs" />
+    <Compile Include="..\Services\SpeechVoiceResolver.cs" Link="Services\SpeechVoiceResolver.cs" />
+    <Compile Include="..\Services\IRecallComparisonService.cs" Link="Services\IRecallComparisonService.cs" />
+    <Compile Include="..\Services\RecallComparisonService.cs" Link="Services\RecallComparisonService.cs" />
+    <Compile Include="..\Services\ISpeechRecognitionService.cs" Link="Services\ISpeechRecognitionService.cs" />
+    <Compile Include="..\Services\ToolkitSpeechRecognitionService.cs" Link="Services\ToolkitSpeechRecognitionService.cs" />
+    <Compile Include="..\Services\IQuizService.cs" Link="Services\IQuizService.cs" />
+    <Compile Include="..\Services\QuizService.cs" Link="Services\QuizService.cs" />
+    <Compile Include="..\Services\ILocalDataStore.cs" Link="Services\ILocalDataStore.cs" />
+    <Compile Include="..\Services\IProgressService.cs" Link="Services\IProgressService.cs" />
+    <Compile Include="..\Services\ProgressDataException.cs" Link="Services\ProgressDataException.cs" />
+    <Compile Include="..\Services\LocalProgressService.cs" Link="Services\LocalProgressService.cs" />
+    <Compile Include="..\Services\ISpacedRepetitionService.cs" Link="Services\ISpacedRepetitionService.cs" />
+    <Compile Include="..\Services\LocalSpacedRepetitionService.cs" Link="Services\LocalSpacedRepetitionService.cs" />
+    <Compile Include="..\Services\IStudyPlanSettingsStore.cs" Link="Services\IStudyPlanSettingsStore.cs" />
+    <Compile Include="..\Services\IStudyPlanService.cs" Link="Services\IStudyPlanService.cs" />
+    <Compile Include="..\Services\StudyPlanService.cs" Link="Services\StudyPlanService.cs" />
+    <Compile Include="..\Services\IReminderSettingsStore.cs" Link="Services\IReminderSettingsStore.cs" />
+    <Compile Include="..\Services\IReadingPositionStore.cs" Link="Services\IReadingPositionStore.cs" />
+    <Compile Include="..\Services\ILocalReminderScheduler.cs" Link="Services\ILocalReminderScheduler.cs" />
+    <Compile Include="..\Services\IReminderService.cs" Link="Services\IReminderService.cs" />
+    <Compile Include="..\Services\ReminderService.cs" Link="Services\ReminderService.cs" />
+    <Compile Include="..\Services\IDataHealthService.cs" Link="Services\IDataHealthService.cs" />
+    <Compile Include="..\Services\DataHealthService.cs" Link="Services\DataHealthService.cs" />
+    <Compile Include="..\Services\IProgressExportService.cs" Link="Services\IProgressExportService.cs" />
+    <Compile Include="..\Services\ProgressExportService.cs" Link="Services\ProgressExportService.cs" />
+    <None Include="..\Data\Bible\*.json" Link="Bible\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

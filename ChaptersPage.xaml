@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibleRecallTrainerV2.ChaptersPage"
+             x:Name="ChaptersRoot"
+             Title="{Binding BookName}">
+    <Grid RowDefinitions="Auto,*" Padding="20,16" RowSpacing="16">
+        <VerticalStackLayout Spacing="4">
+            <Label Text="{Binding BookName}" FontSize="28" FontAttributes="Bold" SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="Choose a chapter to read" FontSize="15" TextColor="{StaticResource Gray500}" />
+            <Label Text="{Binding ErrorMessage}" IsVisible="{Binding HasError}" TextColor="#B3261E" Margin="0,8,0,0" />
+        </VerticalStackLayout>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Chapters}" SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Button Text="{Binding ChapterNumber, StringFormat='Chapter {0}'}"
+                            Command="{Binding Source={x:Reference ChaptersRoot}, Path=BindingContext.OpenChapterCommand}"
+                            CommandParameter="{Binding .}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ActivityIndicator Grid.RowSpan="2" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

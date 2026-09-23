@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibleRecallTrainerV2.BooksPage"
+             x:Name="BooksRoot"
+             Title="Books">
+    <Grid RowDefinitions="Auto,*" Padding="20,16" RowSpacing="12">
+        <VerticalStackLayout Spacing="4">
+            <Label Text="Study syllabus" FontSize="28" FontAttributes="Bold" SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="World English Bible · available offline" FontSize="14" TextColor="{StaticResource Gray500}" />
+            <Label Text="{Binding ErrorMessage}" IsVisible="{Binding HasError}" TextColor="#B3261E" Margin="0,8,0,0" />
+        </VerticalStackLayout>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Books}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18" Margin="0,6">
+                        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" RowSpacing="4">
+                            <Label Text="{Binding DisplayName}" FontSize="20" FontAttributes="Bold" />
+                            <Label Grid.Row="1" Text="{Binding ChapterRange}" FontSize="15" TextColor="{StaticResource Gray500}" />
+                            <Button Grid.Column="1" Grid.RowSpan="2" Text="Chapters" VerticalOptions="Center"
+                                    Command="{Binding Source={x:Reference BooksRoot}, Path=BindingContext.OpenBookCommand}"
+                                    CommandParameter="{Binding .}" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ActivityIndicator Grid.RowSpan="2" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

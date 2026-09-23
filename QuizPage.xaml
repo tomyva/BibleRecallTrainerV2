@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibleRecallTrainerV2.QuizPage"
+             Title="{Binding Heading}">
+    <ScrollView>
+        <VerticalStackLayout Padding="22,18" Spacing="16">
+            <Grid ColumnDefinitions="*,Auto">
+                <VerticalStackLayout Spacing="3">
+                    <Label Text="{Binding Heading}" FontSize="28" FontAttributes="Bold" SemanticProperties.HeadingLevel="Level1" />
+                    <Label Text="{Binding Progress}" TextColor="{StaticResource Gray500}" />
+                </VerticalStackLayout>
+                <Label Grid.Column="1" Text="{Binding Score}" FontAttributes="Bold" VerticalOptions="Center" />
+            </Grid>
+
+            <Label Text="Type the missing word from the World English Bible verse." FontSize="15" />
+            <Border Stroke="{DynamicResource ThemeBorder}" StrokeShape="RoundRectangle 14" Padding="18">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="{Binding Reference}" TextColor="{DynamicResource Primary}" FontAttributes="Bold" />
+                    <Label Text="{Binding Prompt}" FontSize="19" LineHeight="1.4" LineBreakMode="WordWrap" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Entry Text="{Binding Answer}" Placeholder="Missing word" ReturnType="Done" FontSize="18" SemanticProperties.Description="Your missing word answer" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                <Button Text="Check Answer" Command="{Binding SubmitCommand}" />
+                <Button Grid.Column="1" Text="Next" Command="{Binding NextCommand}" />
+            </Grid>
+            <Label Text="{Binding Feedback}" FontSize="17" FontAttributes="Bold" LineBreakMode="WordWrap" />
+            <Button Text="Restart Quiz" Command="{Binding RestartCommand}" IsVisible="{Binding IsComplete}" />
+            <Button Text="Back" Command="{Binding BackCommand}" BackgroundColor="{StaticResource Gray600}" />
+            <Label Text="{Binding ErrorMessage}" IsVisible="{Binding HasError}" TextColor="#B3261E" />
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

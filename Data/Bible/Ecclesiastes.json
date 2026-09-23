@@ -1,0 +1,500 @@
+{
+  "id": "ecclesiastes",
+  "name": "Ecclesiastes",
+  "displayName": "Ecclesiastes",
+  "testament": "Old",
+  "chapters": [
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 1,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "The words of the Preacher, the son of David, king in Jerusalem:"
+        },
+        {
+          "verseNumber": 2,
+          "text": "“Vanity of vanities,” says the Preacher; “Vanity of vanities, all is vanity.”"
+        },
+        {
+          "verseNumber": 3,
+          "text": "What does man gain from all his labor in which he labors under the sun?"
+        },
+        {
+          "verseNumber": 4,
+          "text": "One generation goes, and another generation comes; but the earth remains forever."
+        },
+        {
+          "verseNumber": 5,
+          "text": "The sun also rises, and the sun goes down, and hurries to its place where it rises."
+        },
+        {
+          "verseNumber": 6,
+          "text": "The wind goes toward the south, and turns around to the north. It turns around continually as it goes, and the wind returns again to its courses."
+        },
+        {
+          "verseNumber": 7,
+          "text": "All the rivers run into the sea, yet the sea is not full. To the place where the rivers flow, there they flow again."
+        },
+        {
+          "verseNumber": 8,
+          "text": "All things are full of weariness beyond uttering. The eye is not satisfied with seeing, nor the ear filled with hearing."
+        },
+        {
+          "verseNumber": 9,
+          "text": "That which has been is that which shall be, and that which has been done is that which shall be done; and there is no new thing under the sun."
+        },
+        {
+          "verseNumber": 10,
+          "text": "Is there a thing of which it may be said, “Behold, this is new”? It has been long ago, in the ages which were before us."
+        },
+        {
+          "verseNumber": 11,
+          "text": "There is no memory of the former; neither shall there be any memory of the latter that are to come, among those that shall come after."
+        },
+        {
+          "verseNumber": 12,
+          "text": "I, the Preacher, was king over Israel in Jerusalem."
+        },
+        {
+          "verseNumber": 13,
+          "text": "I applied my heart to seek and to search out by wisdom concerning all that is done under the sky. It is a heavy burden that God has given to the sons of men to be afflicted with."
+        },
+        {
+          "verseNumber": 14,
+          "text": "I have seen all the works that are done under the sun; and behold, all is vanity and a chasing after wind."
+        },
+        {
+          "verseNumber": 15,
+          "text": "That which is crooked can’t be made straight; and that which is lacking can’t be counted."
+        },
+        {
+          "verseNumber": 16,
+          "text": "I said to myself, “Behold, I have obtained for myself great wisdom above all who were before me in Jerusalem. Yes, my heart has had great experience of wisdom and knowledge.”"
+        },
+        {
+          "verseNumber": 17,
+          "text": "I applied my heart to know wisdom, and to know madness and folly. I perceived that this also was a chasing after wind."
+        },
+        {
+          "verseNumber": 18,
+          "text": "For in much wisdom is much grief; and he who increases knowledge increases sorrow."
+        }
+      ]
+    },
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 2,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "I said in my heart, “Come now, I will test you with mirth; therefore enjoy pleasure;” and behold, this also was vanity."
+        },
+        {
+          "verseNumber": 2,
+          "text": "I said of laughter, “It is foolishness;” and of mirth, “What does it accomplish?”"
+        },
+        {
+          "verseNumber": 3,
+          "text": "I searched in my heart how to cheer my flesh with wine, my heart yet guiding me with wisdom, and how to lay hold of folly, until I might see what it was good for the sons of men that they should do under heaven all the days of their lives."
+        },
+        {
+          "verseNumber": 4,
+          "text": "I made myself great works. I built myself houses. I planted myself vineyards."
+        },
+        {
+          "verseNumber": 5,
+          "text": "I made myself gardens and parks, and I planted trees in them of all kinds of fruit."
+        },
+        {
+          "verseNumber": 6,
+          "text": "I made myself pools of water, to water the forest where trees were grown."
+        },
+        {
+          "verseNumber": 7,
+          "text": "I bought male servants and female servants, and had servants born in my house. I also had great possessions of herds and flocks, above all who were before me in Jerusalem."
+        },
+        {
+          "verseNumber": 8,
+          "text": "I also gathered silver and gold for myself, and the treasure of kings and of the provinces. I got myself male and female singers, and the delights of the sons of men: musical instruments of all sorts."
+        },
+        {
+          "verseNumber": 9,
+          "text": "So I was great, and increased more than all who were before me in Jerusalem. My wisdom also remained with me."
+        },
+        {
+          "verseNumber": 10,
+          "text": "Whatever my eyes desired, I didn’t keep from them. I didn’t withhold my heart from any joy, for my heart rejoiced because of all my labor, and this was my portion from all my labor."
+        },
+        {
+          "verseNumber": 11,
+          "text": "Then I looked at all the works that my hands had worked, and at the labor that I had labored to do; and behold, all was vanity and a chasing after wind, and there was no profit under the sun."
+        },
+        {
+          "verseNumber": 12,
+          "text": "I turned myself to consider wisdom, madness, and folly; for what can the king’s successor do? Just that which has been done long ago."
+        },
+        {
+          "verseNumber": 13,
+          "text": "Then I saw that wisdom excels folly, as far as light excels darkness."
+        },
+        {
+          "verseNumber": 14,
+          "text": "The wise man’s eyes are in his head, and the fool walks in darkness—and yet I perceived that one event happens to them all."
+        },
+        {
+          "verseNumber": 15,
+          "text": "Then I said in my heart, “As it happens to the fool, so will it happen even to me; and why was I then more wise?” Then I said in my heart that this also is vanity."
+        },
+        {
+          "verseNumber": 16,
+          "text": "For of the wise man, even as of the fool, there is no memory forever, since in the days to come all will have been long forgotten. Indeed, the wise man must die just like the fool!"
+        },
+        {
+          "verseNumber": 17,
+          "text": "So I hated life, because the work that is worked under the sun was grievous to me; for all is vanity and a chasing after wind."
+        },
+        {
+          "verseNumber": 18,
+          "text": "I hated all my labor in which I labored under the sun, because I must leave it to the man who comes after me."
+        },
+        {
+          "verseNumber": 19,
+          "text": "Who knows whether he will be a wise man or a fool? Yet he will have rule over all of my labor in which I have labored, and in which I have shown myself wise under the sun. This also is vanity."
+        },
+        {
+          "verseNumber": 20,
+          "text": "Therefore I began to cause my heart to despair concerning all the labor in which I had labored under the sun."
+        },
+        {
+          "verseNumber": 21,
+          "text": "For there is a man whose labor is with wisdom, with knowledge, and with skillfulness; yet he shall leave it for his portion to a man who has not labored for it. This also is vanity and a great evil."
+        },
+        {
+          "verseNumber": 22,
+          "text": "For what does a man have of all his labor and of the striving of his heart, in which he labors under the sun?"
+        },
+        {
+          "verseNumber": 23,
+          "text": "For all his days are sorrows, and his travail is grief; yes, even in the night his heart takes no rest. This also is vanity."
+        },
+        {
+          "verseNumber": 24,
+          "text": "There is nothing better for a man than that he should eat and drink, and make his soul enjoy good in his labor. This also I saw, that it is from the hand of God."
+        },
+        {
+          "verseNumber": 25,
+          "text": "For who can eat, or who can have enjoyment, more than I?"
+        },
+        {
+          "verseNumber": 26,
+          "text": "For to the man who pleases him, God gives wisdom, knowledge, and joy; but to the sinner he gives travail, to gather and to heap up, that he may give to him who pleases God. This also is vanity and a chasing after wind."
+        }
+      ]
+    },
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 3,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "For everything there is a season, and a time for every purpose under heaven:"
+        },
+        {
+          "verseNumber": 2,
+          "text": "a time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted;"
+        },
+        {
+          "verseNumber": 3,
+          "text": "a time to kill, and a time to heal; a time to break down, and a time to build up;"
+        },
+        {
+          "verseNumber": 4,
+          "text": "a time to weep, and a time to laugh; a time to mourn, and a time to dance;"
+        },
+        {
+          "verseNumber": 5,
+          "text": "a time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing;"
+        },
+        {
+          "verseNumber": 6,
+          "text": "a time to seek, and a time to lose; a time to keep, and a time to cast away;"
+        },
+        {
+          "verseNumber": 7,
+          "text": "a time to tear, and a time to sew; a time to keep silence, and a time to speak;"
+        },
+        {
+          "verseNumber": 8,
+          "text": "a time to love, and a time to hate; a time for war, and a time for peace."
+        },
+        {
+          "verseNumber": 9,
+          "text": "What profit has he who works in that in which he labors?"
+        },
+        {
+          "verseNumber": 10,
+          "text": "I have seen the burden which God has given to the sons of men to be afflicted with."
+        },
+        {
+          "verseNumber": 11,
+          "text": "He has made everything beautiful in its time. He has also set eternity in their hearts, yet so that man can’t find out the work that God has done from the beginning even to the end."
+        },
+        {
+          "verseNumber": 12,
+          "text": "I know that there is nothing better for them than to rejoice, and to do good as long as they live."
+        },
+        {
+          "verseNumber": 13,
+          "text": "Also that every man should eat and drink, and enjoy good in all his labor, is the gift of God."
+        },
+        {
+          "verseNumber": 14,
+          "text": "I know that whatever God does, it shall be forever. Nothing can be added to it, nor anything taken from it; and God has done it, that men should fear before him."
+        },
+        {
+          "verseNumber": 15,
+          "text": "That which is has been long ago, and that which is to be has been long ago. God seeks again that which is passed away."
+        },
+        {
+          "verseNumber": 16,
+          "text": "Moreover I saw under the sun, in the place of justice, that wickedness was there; and in the place of righteousness, that wickedness was there."
+        },
+        {
+          "verseNumber": 17,
+          "text": "I said in my heart, “God will judge the righteous and the wicked; for there is a time there for every purpose and for every work.”"
+        },
+        {
+          "verseNumber": 18,
+          "text": "I said in my heart, “As for the sons of men, God tests them, so that they may see that they themselves are like animals."
+        },
+        {
+          "verseNumber": 19,
+          "text": "For that which happens to the sons of men happens to animals. Even one thing happens to them. As the one dies, so the other dies. Yes, they have all one breath; and man has no advantage over the animals, for all is vanity."
+        },
+        {
+          "verseNumber": 20,
+          "text": "All go to one place. All are from the dust, and all turn to dust again."
+        },
+        {
+          "verseNumber": 21,
+          "text": "Who knows the spirit of man, whether it goes upward, and the spirit of the animal, whether it goes downward to the earth?”"
+        },
+        {
+          "verseNumber": 22,
+          "text": "Therefore I saw that there is nothing better than that a man should rejoice in his works, for that is his portion; for who can bring him to see what will be after him?"
+        }
+      ]
+    },
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 4,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "Then I returned and saw all the oppressions that are done under the sun: and behold, the tears of those who were oppressed, and they had no comforter; and on the side of their oppressors there was power; but they had no comforter."
+        },
+        {
+          "verseNumber": 2,
+          "text": "Therefore I praised the dead who have been long dead more than the living who are yet alive."
+        },
+        {
+          "verseNumber": 3,
+          "text": "Yes, better than them both is him who has not yet been, who has not seen the evil work that is done under the sun."
+        },
+        {
+          "verseNumber": 4,
+          "text": "Then I saw all the labor and achievement that is the envy of a man’s neighbor. This also is vanity and a striving after wind."
+        },
+        {
+          "verseNumber": 5,
+          "text": "The fool folds his hands together and ruins himself."
+        },
+        {
+          "verseNumber": 6,
+          "text": "Better is a handful, with quietness, than two handfuls with labor and chasing after wind."
+        },
+        {
+          "verseNumber": 7,
+          "text": "Then I returned and saw vanity under the sun."
+        },
+        {
+          "verseNumber": 8,
+          "text": "There is one who is alone, and he has neither son nor brother. There is no end to all of his labor, neither are his eyes satisfied with wealth. “For whom then do I labor and deprive my soul of enjoyment?” This also is vanity. Yes, it is a miserable business."
+        },
+        {
+          "verseNumber": 9,
+          "text": "Two are better than one, because they have a good reward for their labor."
+        },
+        {
+          "verseNumber": 10,
+          "text": "For if they fall, the one will lift up his fellow; but woe to him who is alone when he falls, and doesn’t have another to lift him up."
+        },
+        {
+          "verseNumber": 11,
+          "text": "Again, if two lie together, then they have warmth; but how can one keep warm alone?"
+        },
+        {
+          "verseNumber": 12,
+          "text": "If a man prevails against one who is alone, two shall withstand him; and a threefold cord is not quickly broken."
+        },
+        {
+          "verseNumber": 13,
+          "text": "Better is a poor and wise youth than an old and foolish king who doesn’t know how to receive admonition any more."
+        },
+        {
+          "verseNumber": 14,
+          "text": "For out of prison he came out to be king; yes, even in his kingdom he was born poor."
+        },
+        {
+          "verseNumber": 15,
+          "text": "I saw all the living who walk under the sun, that they were with the youth, the other, who succeeded him."
+        },
+        {
+          "verseNumber": 16,
+          "text": "There was no end of all the people, even of all them over whom he was—yet those who come after shall not rejoice in him. Surely this also is vanity and a chasing after wind."
+        }
+      ]
+    },
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 5,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "Guard your steps when you go to God’s house; for to draw near to listen is better than to give the sacrifice of fools, for they don’t know that they do evil."
+        },
+        {
+          "verseNumber": 2,
+          "text": "Don’t be rash with your mouth, and don’t let your heart be hasty to utter anything before God; for God is in heaven, and you on earth. Therefore let your words be few."
+        },
+        {
+          "verseNumber": 3,
+          "text": "For as a dream comes with a multitude of cares, so a fool’s speech with a multitude of words."
+        },
+        {
+          "verseNumber": 4,
+          "text": "When you vow a vow to God, don’t defer to pay it; for he has no pleasure in fools. Pay that which you vow."
+        },
+        {
+          "verseNumber": 5,
+          "text": "It is better that you should not vow, than that you should vow and not pay."
+        },
+        {
+          "verseNumber": 6,
+          "text": "Don’t allow your mouth to lead you into sin. Don’t protest before the messenger that this was a mistake. Why should God be angry at your voice, and destroy the work of your hands?"
+        },
+        {
+          "verseNumber": 7,
+          "text": "For in the multitude of dreams there are vanities, as well as in many words; but you must fear God."
+        },
+        {
+          "verseNumber": 8,
+          "text": "If you see the oppression of the poor, and the violent taking away of justice and righteousness in a district, don’t marvel at the matter, for one official is eyed by a higher one, and there are officials over them."
+        },
+        {
+          "verseNumber": 9,
+          "text": "Moreover the profit of the earth is for all. The king profits from the field."
+        },
+        {
+          "verseNumber": 10,
+          "text": "He who loves silver shall not be satisfied with silver, nor he who loves abundance, with increase. This also is vanity."
+        },
+        {
+          "verseNumber": 11,
+          "text": "When goods increase, those who eat them are increased; and what advantage is there to its owner, except to feast on them with his eyes?"
+        },
+        {
+          "verseNumber": 12,
+          "text": "The sleep of a laboring man is sweet, whether he eats little or much; but the abundance of the rich will not allow him to sleep."
+        },
+        {
+          "verseNumber": 13,
+          "text": "There is a grievous evil which I have seen under the sun: wealth kept by its owner to his harm."
+        },
+        {
+          "verseNumber": 14,
+          "text": "Those riches perish by misfortune, and if he has fathered a son, there is nothing in his hand."
+        },
+        {
+          "verseNumber": 15,
+          "text": "As he came out of his mother’s womb, naked shall he go again as he came, and shall take nothing for his labor, which he may carry away in his hand."
+        },
+        {
+          "verseNumber": 16,
+          "text": "This also is a grievous evil, that in all points as he came, so shall he go. And what profit does he have who labors for the wind?"
+        },
+        {
+          "verseNumber": 17,
+          "text": "All his days he also eats in darkness, he is frustrated, and has sickness and wrath."
+        },
+        {
+          "verseNumber": 18,
+          "text": "Behold, that which I have seen to be good and proper is for one to eat and to drink, and to enjoy good in all his labor, in which he labors under the sun, all the days of his life which God has given him; for this is his portion."
+        },
+        {
+          "verseNumber": 19,
+          "text": "Every man also to whom God has given riches and wealth, and has given him power to eat of it, and to take his portion, and to rejoice in his labor—this is the gift of God."
+        },
+        {
+          "verseNumber": 20,
+          "text": "For he shall not often reflect on the days of his life, because God occupies him with the joy of his heart."
+        }
+      ]
+    },
+    {
+      "bookId": "ecclesiastes",
+      "chapterNumber": 6,
+      "verses": [
+        {
+          "verseNumber": 1,
+          "text": "There is an evil which I have seen under the sun, and it is heavy on men:"
+        },
+        {
+          "verseNumber": 2,
+          "text": "a man to whom God gives riches, wealth, and honor, so that he lacks nothing for his soul of all that he desires, yet God gives him no power to eat of it, but an alien eats it. This is vanity, and it is an evil disease."
+        },
+        {
+          "verseNumber": 3,
+          "text": "If a man fathers a hundred children, and lives many years, so that the days of his years are many, but his soul is not filled with good, and moreover he has no burial, I say that a stillborn child is better than he;"
+        },
+        {
+          "verseNumber": 4,
+          "text": "for it comes in vanity, and departs in darkness, and its name is covered with darkness."
+        },
+        {
+          "verseNumber": 5,
+          "text": "Moreover it has not seen the sun nor known it. This has rest rather than the other."
+        },
+        {
+          "verseNumber": 6,
+          "text": "Yes, though he live a thousand years twice told, and yet fails to enjoy good, don’t all go to one place?"
+        },
+        {
+          "verseNumber": 7,
+          "text": "All the labor of man is for his mouth, and yet the appetite is not filled."
+        },
+        {
+          "verseNumber": 8,
+          "text": "For what advantage has the wise more than the fool? What has the poor man, that knows how to walk before the living?"
+        },
+        {
+          "verseNumber": 9,
+          "text": "Better is the sight of the eyes than the wandering of the desire. This also is vanity and a chasing after wind."
+        },
+        {
+          "verseNumber": 10,
+          "text": "Whatever has been, its name was given long ago; and it is known what man is; neither can he contend with him who is mightier than he."
+        },
+        {
+          "verseNumber": 11,
+          "text": "For there are many words that create vanity. What does that profit man?"
+        },
+        {
+          "verseNumber": 12,
+          "text": "For who knows what is good for man in life, all the days of his vain life which he spends like a shadow? For who can tell a man what will be after him under the sun?"
+        }
+      ]
+    }
+  ]
+}
